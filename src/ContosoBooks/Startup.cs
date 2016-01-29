@@ -108,6 +108,8 @@ namespace ContosoBooks
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            SampleData.Initialize(app.ApplicationServices);
         }
 
         // Entry point for the application.
